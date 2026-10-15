@@ -13,6 +13,7 @@ expo-env.d.ts
 .kotlin/
 *.orig.*
 *.jks
+credentials.json
 *.p8
 *.p12
 *.key
@@ -39,3 +40,7 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Build artifacts (kept locally for device installation)
+*.apk
+*.apk.zip

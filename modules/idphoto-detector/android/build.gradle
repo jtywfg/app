@@ -1,0 +1,18 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'com.pinpic.idphoto'
+version = '1.0.0'
+
+dependencies {
+  // Bundled model: background replacement works without network access.
+  implementation 'com.google.mlkit:segmentation-selfie:16.0.0-beta6'
+  implementation 'com.google.mlkit:face-detection:16.1.7'
+}
+
+android {
+  namespace 'expo.modules.idphotodetector'
+  defaultConfig { versionCode 1; versionName '1.0.0' }
+}
